@@ -21,7 +21,7 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
     SpectacularRedocView,
 )
-from orders.backend.views import (
+from backend.views import (
     SupplierUpdate,
     ShopView,
     CategoryView,

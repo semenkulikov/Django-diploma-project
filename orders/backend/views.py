@@ -7,8 +7,8 @@ from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 
-from orders.backend.permissions import IsShop
-from orders.backend.models import (
+from backend.permissions import IsShop
+from backend.models import (
     Shop,
     Category,
     Product,
@@ -19,7 +19,7 @@ from orders.backend.models import (
     Contact,
     User,
 )
-from orders.backend.serializers import (
+from backend.serializers import (
     ShopSerializer,
     CategorySerializer,
     ProductSerializer,

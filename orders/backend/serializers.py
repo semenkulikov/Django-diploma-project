@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer, StringRelatedField
 
-from orders.backend.models import (
+from backend.models import (
     Shop,
     Category,
     Product,
