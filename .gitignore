@@ -13,7 +13,7 @@ orders/.env
 
 ### Project specific ###
 settings_local.py
-orders/diploma
+diploma
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
