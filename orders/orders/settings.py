@@ -38,6 +38,9 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    "jet.dashboard",
+    "jet",
+    # 'baton',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -51,6 +54,7 @@ INSTALLED_APPS = [
     "social_django",
     "silk",
     "backend",
+    # 'baton.autodiscover',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +81,9 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "social_django.context_processors.backends",
+                "social_django.context_processors.login_redirect",
+                "django.template.context_processors.request",
             ],
         },
     },

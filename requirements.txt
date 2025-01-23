@@ -43,3 +43,6 @@ uritemplate==4.1.1
 vine==5.0.0
 wcwidth==0.2.6
 social-auth-app-django
+django-jet-reboot
+google-api-python-client==1.4.1
+FeedParser
