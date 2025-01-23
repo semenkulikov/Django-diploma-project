@@ -263,3 +263,10 @@ class OrderConfirmationView(APIView):
             return JsonResponse({"Status": True})
         elif action == "disapprove":
             return JsonResponse({"Status": "Now you can change your order"})
+
+
+class TriggerError(APIView):
+    """ Тестовый класс для проверки работы Sentry """
+    permission_classes = [IsAuthenticated]
+    def get(self, request, *args, **kwargs):
+        raise ValueError("Test error")

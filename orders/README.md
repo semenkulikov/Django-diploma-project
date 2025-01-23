@@ -33,3 +33,9 @@ python orders/manage.py runserver
 ```bash
 pytest
 ```
+9. Настройка Sentry 
+   * Зарегистрируйтесь на https://sentry.io/
+   * Выберите SDK для Django
+   * Вставьте полученное значение DSN в .env файл
+   * Перейдите по адресу http://localhost:8000/sentry-debug/
+   * Проверьте трассировку ошибок Sentry в личном кабинете

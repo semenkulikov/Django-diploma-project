@@ -34,6 +34,7 @@ from backend.views import (
     UserRegisterView,
     Login,
     ContactView,
+    TriggerError,
 )
 
 
@@ -73,4 +74,5 @@ urlpatterns = [
     ),
     path("silk/", include("silk.urls", namespace="silk")),
     path('auth/', include('social_django.urls', namespace='social')),
+    path('sentry-debug/', TriggerError.as_view()),
 ]
