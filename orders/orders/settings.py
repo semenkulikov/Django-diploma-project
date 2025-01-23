@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "drf_spectacular_sidecar",
     "social_django",
     "silk",
+    "imagekit",
     "backend",
     # 'baton.autodiscover',
 ]
