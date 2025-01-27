@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "imagekit",
     "backend",
     # 'baton.autodiscover',
+    'cachalot',
 ]
 
 MIDDLEWARE = [
